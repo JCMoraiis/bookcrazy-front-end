@@ -1,1 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
+body,html {
+    margin: 0;
+    height: 100%;
+    background-color: rgb(235, 245, 251, 0.3);
+}
+
+::-webkit-input-placeholder {
+    font-family: 'Chivo', sans-serif;
+    font-size: 15px;
+ }
+
+.fonte-padrao {
+    font-family: 'Chivo', sans-serif;
+}
+
+.header {
+    margin: 0;
+    width: 100%;
+    height: 15%;
+    background-color:white;
+    position: fixed;
+    border-bottom: solid #e5e5e5 1px;
+    z-index: 2;
+}
+
+.div-logo {
+    width: 8%;
+    height: 70%;
+    padding: 1% 0% 1.3% 3%;
+}
+
+#logo {
+    width: 100%;
+    height: 100%;
+}
+
+.div-nome-da-loja {
+    width: 15%;
+    height: 36%;
+    position: absolute;
+    top: 35%;
+    left: 13%;
+}
+
+.nome-da-loja {
+    color: #87ceeb;
+    font-size: 30px;
+    margin: 0;
+}
+
+div > button {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(87, 87, 243, 0.7);
+    border-radius: 3px;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+}
