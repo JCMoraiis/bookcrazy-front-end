@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>BookCrazy</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Chivo&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f2e207c4f7.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="fonte-padrao">
+    <div class="grid-container">
+        <div class="item-tabela">
+            <div class="descricao-tabela" class="fonte-padrao">
+                <div class="label-produtos">
+                    <h2>Produtos</h2>
+                </div>
+            </div>
+            <div class="tabela">
+                <table>
+                    <tr>
+                        <th>Nome do produto</th>
+                        <th>Descrição</th>
+                        <th>Qtd.Estoque</th>
+                        <th>Valor</th>
+                        <th>Desconto</th>
+                        <th>Ações</th>
+                    </tr>
+                    <tr *ngFor="let book of books">
+                        <td>{{ book.name }}</td>
+                        <td>{{ book.description }}</td>
+                        <td>{{ book.stockyQuantity }}</td>
+                        <td>R$ {{ book.value }}</td>
+                        <td>R$ {{ book.discount }}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
