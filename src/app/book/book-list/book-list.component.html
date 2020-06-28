@@ -5,7 +5,6 @@
     <title>BookCrazy</title>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css2?family=Chivo&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/f2e207c4f7.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="fonte-padrao">
@@ -32,6 +31,14 @@
                         <td>{{ book.stockyQuantity }}</td>
                         <td>R$ {{ book.value }}</td>
                         <td>R$ {{ book.discount }}</td>
+                        <td>
+                            <div class="icons">
+                                <fa-icon [icon]="faPencilAlt"></fa-icon>
+                            </div>
+                            <div class="icons">
+                                <fa-icon [icon]="faTimes"></fa-icon>
+                            </div>
+                        </td>
                     </tr>
                 </table>
             </div>
