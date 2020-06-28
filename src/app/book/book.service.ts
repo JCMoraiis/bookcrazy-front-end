@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Book } from './Book';
 
-const url = 'http://localhost:3000';
+const url = 'http://localhost:8080/bookcrazy';
 
 @Injectable({
   providedIn: 'root'
@@ -15,6 +15,6 @@ export class ProductService {
   constructor(private http: HttpClient) { }
 
   getBooks(): Observable<Book[]> {
-    return this.http.get<Book[]>(url + '/books');
+    return this.http.get<Book[]>(url + '/productlist');
   }
 }
